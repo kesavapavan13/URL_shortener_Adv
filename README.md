@@ -31,23 +31,4 @@ This project was developed individually as part of hands-on learning and interns
 
 ## 📂 Project Structure
 
-
-
-│   models.py
-│   report.pdf
-│   requirement.txt
-│
-├───instance
-│       database.db
-│
-├───static
-│       style.css
-│
-├───templates
-│       dashboard.html
-│       login.html
-│       signup.html
-│
-└───__pycache__
-        config.cpython-313.pyc
-        models.cpython-313.pyc
+![Project Structure](tree.png)
