@@ -56,7 +56,8 @@ This project was developed individually as part of hands-on learning and interns
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/url-shortener-flask.git
-cd url-shortener-flask  ```
+cd url-shortener-flask
+```
 
 ### 2️⃣ Install Dependencies
 
@@ -85,6 +86,7 @@ http://127.0.0.1:5000/
 
 ```bash
 instance/database.db
+```
 
 ### Tables
 
