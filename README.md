@@ -56,23 +56,26 @@ This project was developed individually as part of hands-on learning and interns
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/url-shortener-flask.git
-cd url-shortener-flask
+cd url-shortener-flask  ```
 
 ### 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
+```
 
 
 ### 3️⃣ Run the Application
 
 ```bash
 python app.py
+```
 
 ### 4️⃣ Open in Browser
 
 ```bash
 http://127.0.0.1:5000/
+```
 
 ### 🗄️ Database Details
 
