@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>URL Shortener</h2>
+
+    <form method="POST">
+        <input type="url" name="url" placeholder="Enter URL" required>
+        <button type="submit">Shorten URL</button>
+    </form>
+
+    {% if short_url %}
+        <p>
+            <b>Short URL:</b>
+            <input type="text" value="{{ request.host_url }}{{ short_url }}" readonly>
+        </p>
+    {% endif %}
+
+    <h3>Your Previous URLs</h3>
+    <ul>
+        {% for u in urls %}
+            <li>
+                {{ u.original_url }} →
+                <a href="{{ request.host_url }}{{ u.short_url }}" target="_blank">
+                    {{ request.host_url }}{{ u.short_url }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('logout') }}">Logout</a>
+</div>
+
+</body>
+</html>
