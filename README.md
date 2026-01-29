@@ -58,3 +58,65 @@ This project was developed individually as part of hands-on learning and interns
 git clone https://github.com/your-username/url-shortener-flask.git
 cd url-shortener-flask
 
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+
+
+### 3️⃣ Run the Application
+
+```bash
+python app.py
+
+### 4️⃣ Open in Browser
+
+```bash
+http://127.0.0.1:5000/
+
+### 🗄️ Database Details
+
+- Database: SQLite
+
+- Auto-created at:
+
+```bash
+instance/database.db
+
+### Tables
+
+- User – stores user credentials
+
+- URL – stores original and shortened URLs linked to users
+
+
+## ⚠️ Important Notes
+
+- Compatible with **Flask 3.x**
+- Database tables are created using `app.app_context()`
+- Each user can access only their own URLs
+- SQLAlchemy ORM is used (no raw SQL)
+
+---
+
+## 🧠 Learning Outcomes
+
+- Flask backend development
+- Authentication using Flask-Login
+- ORM-based database design
+- Frontend–backend integration
+- Debugging real-world Flask issues
+- Structuring scalable web applications
+
+
+## 🙏 Acknowledgment
+
+This project was developed with guidance from **Innomatics Research Labs**.
+
+---
+
+## 👤 Author
+
+**Kesavapavan Gadde**
+
+
